@@ -571,7 +571,7 @@ section {
   padding-top: 24px;
 }
 
-#window {
+#windows-many, #windows-shop, #windows-lend {
   display: flex;
   overflow-y: scroll;
   margin: 40px calc(-50px + 20vw);
