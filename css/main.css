@@ -602,7 +602,7 @@ section {
 }
 
 .text {
-  margin: 30px 30px 60px;
+  margin: 0 30px 20px;
 }
 .text__title {
   font-weight: 500;
@@ -615,12 +615,13 @@ section {
   font-size: 15px;
 }
 .text__list ul {
-  margin-top: 45px;
+  margin-top: calc(20px + 17.5 * (100vw - 320px) / 1110);
 }
 .text__list ul li {
+  padding-top: 12px;
   font-weight: 500;
-  font-size: calc(13px + 7.7 * (100vw - 320px) / 1110);
-  line-height: 178.4%;
+  font-size: calc(12px + 10.5 * (100vw - 320px) / 1110);
+  line-height: 138.4%;
   letter-spacing: 0.035em;
   color: #484848;
   display: flex;
@@ -638,7 +639,7 @@ section {
   max-width: 500px;
 }
 
-#gray {
+#lend-gray, #many-gray, #shop-gray  {
   opacity: 0.8;
   padding: 15px;
   background-color: rgba(1, 1, 1, 0.75);
