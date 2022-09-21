@@ -152,6 +152,7 @@ section {
   z-index: 9999;
   border-bottom: 2px solid rgb(209, 209, 209);
 }
+
 .menu__container {
   display: flex;
   justify-content: center;
@@ -192,6 +193,7 @@ section {
   padding: 10px 17px;
   font-weight: 600;
 }
+
 .offer {
   position: relative;
   padding: 170px 30px;
@@ -383,6 +385,7 @@ section {
   text-transform: uppercase;
   text-align: center;
 }
+
 .block-free {
   display: flex;
   justify-content: space-between;
@@ -503,6 +506,7 @@ section {
   max-width: 860px;
   margin: 0 auto;
 }
+
 .block-contacts {
   margin-top: 30px;
   padding-bottom: 100px;
@@ -550,6 +554,7 @@ section {
   justify-content: space-between;
   padding: 60px calc(10px + 4vw) 0;
 }
+
 .contact-footer {
   display: flex;
   align-items: center;
