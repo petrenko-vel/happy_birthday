@@ -155,7 +155,6 @@ section {
 
 .menu__container {
   display: flex;
-  padding-right: 30px;
   justify-content: center;
   align-items: center;
   min-height: 70px;
@@ -805,6 +804,10 @@ section {
   }
   ::-webkit-scrollbar-thumb {
     width: 0;
+  }
+  .menu__container {
+    padding-right: 30px;
+    justify-content: flex-end;
   }
   .menu__body {
     display: block;
