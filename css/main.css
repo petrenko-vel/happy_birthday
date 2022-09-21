@@ -212,13 +212,18 @@ section {
   display: flex;
   justify-content: flex-end;
 }
-.offer__image img {
+.offer__image img.person {
   position: relative;
   height: 200px;
   width: 200px;
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 50%;
+}
+.offer__image img.vector {
+  position: absolute;
+  top: 88px;
+  left: -340px;
 }
 .offer__button {
   margin: calc(40px + 28 * (100vw - 320px) / 1440) 0 0 calc(30px + 68 * (100vw - 320px) / 1440);
