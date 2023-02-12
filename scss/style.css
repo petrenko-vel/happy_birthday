@@ -1,0 +1,363 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
+@font-face {
+  font-family: Unbounded;
+  font-display: swap;
+  src: url("../fonts/Unbounded-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: Unbounded;
+  font-display: swap;
+  src: url("../fonts/Unbounded-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: Unbounded;
+  font-display: swap;
+  src: url("../fonts/Unbounded-Light.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: Unbounded;
+  font-display: swap;
+  src: url("../fonts/Unbounded-Bold.woff") format("woff");
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face {
+  font-family: Unbounded;
+  font-display: swap;
+  src: url("../fonts/Unbounded-Black.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+}
+*,
+*::before,
+*::after, * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+body {
+  scroll-behavior: smooth;
+  font-size: 16px;
+  font-family: "Montserrat";
+}
+
+.container {
+  max-width: 1830px;
+  margin: 0 auto;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+input, button {
+  background: none;
+  outline: none;
+}
+
+title {
+  font-size: 24px;
+}
+
+.head__button {
+  display: none;
+}
+
+.header__menu {
+  display: flex;
+  position: fixed;
+  width: 100%;
+  background: #fff;
+  z-index: 9999;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__logotipe {
+  margin-left: 20px;
+  font-size: calc(12px + 10 * (100vw - 320px) / 1728);
+  font-weight: 500;
+  letter-spacing: 0.03em;
+}
+
+.menu__container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  min-height: 60px;
+}
+.menu__nawbar {
+  display: flex;
+}
+.menu__list {
+  display: flex;
+  position: relative;
+  z-index: 2;
+}
+.menu__list li {
+  display: flex;
+  align-items: center;
+  height: 60px;
+  border-left: 1px solid;
+}
+.menu__list a {
+  font-size: calc(7px + 13 * (100vw - 320px) / 1728);
+  color: #333333;
+  text-transform: uppercase;
+  padding: 0 calc(15px + 30 * (100vw - 320px) / 1440);
+  transition: all 0.3s;
+}
+.menu__list a:hover {
+  color: #ff8707;
+}
+
+.head {
+  padding-top: calc(70px + 50 * (100vw - 320px) / 1200);
+  background: #494949;
+  height: 100vh;
+}
+.head .container {
+  padding: 0 30px;
+  max-width: 1200px;
+  display: flex;
+  justify-content: space-between;
+}
+.head__img img {
+  width: calc(300px + 50 * (100vw - 320px) / 1200);
+  border: 1px solid #000000;
+}
+.head__social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: -25px;
+  padding-top: 30px;
+}
+.head__social img {
+  padding: 0 13px;
+}
+
+.title__text {
+  display: flex;
+  flex-direction: column;
+  padding-top: 30px;
+  color: #fff;
+  font-weight: 500;
+  font-size: calc(30px + 40 * (100vw - 320px) / 1728);
+  text-transform: uppercase;
+  font-family: "Unbounded";
+  letter-spacing: 0.06em;
+}
+.title__button {
+  margin-top: 55px;
+  display: flex;
+  justify-content: center;
+}
+.title__animation {
+  position: relative;
+}
+.title__animation img {
+  position: absolute;
+  left: -19%;
+  width: 190px;
+  animation-name: rotation;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.offer__title-two {
+  padding: 10px 0 0 50px;
+}
+
+.btn {
+  font-family: "Unbounded";
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #494949;
+  background: #fff;
+  padding: 15px 37px;
+  border: 0.5px solid #000000;
+  box-shadow: 0px 8px 13px rgba(0, 0, 0, 0.35);
+}
+.btn:hover {
+  background: #ebebeb;
+  transition: all 0.4s;
+}
+
+.stages {
+  padding: calc(40px + 68 * (100vw - 320px) / 1110) 0;
+}
+.stages .container {
+  max-width: 1330px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+.stages h2 {
+  font-family: "Unbounded";
+  font-weight: 500;
+  font-size: 20px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #303030;
+}
+.stages__container {
+  max-width: 1110px;
+  margin: 0 auto;
+  padding-left: 137px;
+}
+
+.number-stages {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.number-stages__block {
+  max-width: 374px;
+}
+.number-stages__nomber {
+  position: relative;
+  top: 70px;
+  left: -137px;
+  font-weight: 700;
+  font-size: calc(40px + 40 * (100vw - 320px) / 1330);
+  color: rgba(0, 0, 0, 0.8);
+}
+.number-stages__title {
+  font-weight: 600;
+  font-size: calc(22px + 1.2612612613vw);
+  line-height: 30px;
+}
+.number-stages__body {
+  padding-top: calc(7px + 3.3vw);
+  font-weight: 400;
+  font-size: calc(12px + 5.6 * (100vw - 320px) / 1110);
+  line-height: 18px;
+  text-transform: lowercase;
+}
+
+@media (max-width: 844px) {
+  .menu__container {
+    padding-right: 30px;
+    justify-content: flex-end;
+  }
+  .menu__body {
+    display: block;
+    position: absolute;
+    top: -100%;
+    right: -100%;
+    background: #fff;
+    width: 100%;
+    height: 100vh;
+    transition: all 0.4s;
+    z-index: 11111;
+  }
+  .menu__list {
+    display: block;
+  }
+  .menu__nawbar.open-menu .menu__body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    transition: all 0.4s;
+  }
+  .menu__list li {
+    margin: 20px 0px 30px 13px;
+    font-size: 14px;
+    border-left: none;
+    border-bottom: 1px solid #e5e5e5;
+  }
+  .menu__list li a {
+    padding: 20px;
+    display: block;
+    font-size: 20px;
+  }
+  .icon-menu {
+    position: relative;
+    display: block;
+    margin-right: 30px;
+    z-index: 1111111;
+  }
+  .icon-menu span {
+    height: 2px;
+    width: 45px;
+    position: absolute;
+    background: #314143;
+    margin: 0 auto;
+    transition: 0.5s;
+  }
+  .icon-menu span:after, .icon-menu span:before {
+    content: "";
+    width: 45px;
+    height: 2px;
+    background: #000;
+    position: absolute;
+    display: block;
+    transition: all 1s;
+  }
+  .icon-menu span:before {
+    top: -10px;
+  }
+  .icon-menu span:after {
+    top: 10px;
+  }
+  .menu__nawbar.open-menu span {
+    transform: rotate(-40deg);
+    transition: 0.5s;
+  }
+  .menu__list {
+    margin-right: -32px;
+    margin-top: -70px;
+  }
+  .head .container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .head__img {
+    padding-top: calc(16px + 20 * (100vw - 320px) / 1200);
+  }
+  .head__button {
+    margin-top: -32px;
+    display: flex;
+    justify-content: center;
+  }
+  .title__button {
+    display: none;
+  }
+  .title__animation img {
+    left: -54px;
+    top: -99px;
+  }
+  .number-stages__nomber {
+    left: -114px;
+  }
+}
+@media (max-width: 390px) {
+  .title__text {
+    font-size: 25px;
+  }
+}/*# sourceMappingURL=style.css.map */
