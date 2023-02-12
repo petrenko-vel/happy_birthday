@@ -84,6 +84,7 @@ title {
   z-index: 9999;
   justify-content: space-between;
   align-items: center;
+  border-bottom: 0.6px solid #000;
 }
 .header__logotipe {
   margin-left: 20px;
