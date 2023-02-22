@@ -1,0 +1,310 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+@font-face {
+    font-family: "Bellota Text";
+    font-display: swap;
+    src: url("../fonts/Bellotatextlight.woff2") format("woff2");
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Bellota Text";
+    font-display: swap;
+    src: url("../fonts/Bellotatextbold.woff2") format("woff2");
+    font-weight: 800;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Bellota Text";
+    font-display: swap;
+    src: url("../fonts/Bellotatextregular.woff2") format("woff2");
+    font-weight: 600;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Micra";
+    font-display: swap;
+    src: url("../fonts/micra.woff2") format("woff2");
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+
+*,
+*::before,
+*::after, * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+body {
+  scroll-behavior: smooth;
+  font-size: 16px;
+  font-family: "Bellota Text";
+  font-weight: 600;
+}
+.container {
+    max-width: 1700px;
+    margin: 0 auto;
+}
+ul, ol {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: #000;
+}
+input, button {
+    background: none;
+    outline: none;
+}
+title {
+    font-size: 24px;
+}
+
+.head__button {
+    display: none;
+}
+// ..............<HEADER>..................
+.header {
+    &__menu {
+        display: flex;
+        position: fixed;
+        width: 100%;
+        z-index: 99;
+        justify-content: center;
+	}
+}
+.menu {
+	&__container {
+		display: flex;
+        justify-content: flex-end;
+		align-items: center;
+		min-height: 60px;	
+        padding: 0 20px;
+	}
+	&__nawbar {
+		display: flex;
+	}
+	&__list {
+		display: flex;
+		position: relative;
+		z-index: 2;
+		li {
+            display: flex;
+            align-items: center;
+		}
+        a {
+            font-size: calc(13px + 3 * (100vw - 320px) / 1728);
+            text-transform: uppercase;
+            padding: 0 calc(15px + 15 * (100vw - 320px) / 1728);
+            transition: all 0.3s;
+            &:hover {
+                color: #ff8707;
+            }
+        }
+	}
+}
+
+
+
+.header {
+    background: url(../img/noise.svg);
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+
+    &__body {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__section-one {
+    }
+
+    &__section-two {
+    }
+}
+.section-one {
+    padding-left: calc(20px + 340 * (100vw - 320px) / 1700);;
+    padding-top: 270px;
+    margin-left: -45px;
+    &__title {
+    }
+}
+.title {
+
+    &__valeria, &__yatsuk {
+        font-family: 'Micra';
+        font-weight: 300;
+        font-size: calc(55px + 55 * (100vw - 320px) / 1700);
+        letter-spacing: -0.02em;
+        text-transform: uppercase;
+    }
+    &__text-block {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    &__yatsuk {
+        padding: 4px 0 0 90px;
+    }
+    &__body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__vector {
+        width: 2px;
+        height: 40px;
+        margin: 10px 0;
+        background: #F98523;
+        border-radius: 12px;
+    }
+
+    &__btn {
+        font-family: 'Micra';
+        font-style: normal;
+        font-weight: 400;
+        font-size: calc(14px + 14 * (100vw - 320px) / 1700);
+        letter-spacing: 0.02em;
+        color: #FBFBFB;
+        padding: calc(17px + 17 * (100vw - 320px) / 1700) calc(35px + 67 * (100vw - 320px) / 1700);
+        background: linear-gradient(90deg, #FBAA65 9.7%, #FCA052 47.05%, #F98523 91.99%);
+    }
+}
+.section-two {
+
+    &__image {
+        p {
+            font-size: calc(10px + 12 * (100vw - 320px) / 1700);
+        }
+    }
+}
+.image {
+    display: flex;
+    align-items: flex-end;
+
+    &__item-one {
+        img {
+            width: calc(150px + 220 * (100vw - 320px) / 1700);
+        }
+        
+    }
+
+    &__item-two {
+        padding-left: 28px;
+        margin-bottom: -60px;
+        img {
+            width: calc(150px + 90 * (100vw - 320px) / 1700);
+        }
+    }
+}
+
+
+
+
+
+
+
+@media (max-width: 844px) {
+    .section-two {
+        margin-top: -20px;
+    }
+    .section-one {
+        padding: 120px 0 0 0;
+        text-align: center;
+    }
+    .header__body {
+        flex-wrap: wrap;
+        padding: 0 20px;
+        flex-direction: column-reverse;
+    }
+    .section-two__image {
+        padding-top: 58px;
+    }
+   
+
+	.menu__body {
+		display: block;
+		position: absolute;
+		top: -100%;
+		right: -100%;
+		background: #fff;
+		width: 100%;
+		height: 100vh;
+		transition: all 0.4s;	
+		z-index: 11111;
+	}
+	.menu__list {
+		display: block;
+	}
+	.menu__nawbar.open-menu .menu__body{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		top: 0;
+    	left: 0;
+		transition: all 0.4s;	
+	}
+	.menu__list li {
+		margin: 20px 0px -20px 13px;
+		font-size: 14px;
+        border-left: none;
+        border-bottom: 1px solid #e5e5e5;
+		 	a {
+				padding: 20px;
+				display: block;
+				font-size: 20px;
+			}
+		}
+	.icon-menu {
+		position: relative;
+		display: block;
+		margin-right: 30px;
+		z-index: 1111111;
+	   }
+	.icon-menu span {
+		height: 2px;
+		width: 30px;
+		position: absolute;
+		background: #314143;
+		margin: 0 auto;
+		transition: 0.5s; 
+		&:after, &:before {
+			content: "";
+			width: 30px;
+			height: 2px;
+			background: #000;
+			position: absolute;
+			display: block;
+			transition: all 1s;
+		}
+		&:before {
+			top: -10px;
+		}
+		&:after {
+			top: 10px;
+		}
+	}
+    .header__menu {
+        justify-content: flex-end;
+    }
+	
+	.menu__nawbar.open-menu  span{
+		transform: rotate(-40deg);
+		transition: 0.5s; 
+	}
+
+	.menu__list {
+	}	
+	
+}
+
+@media (max-width: 390px) {
+    
+}
