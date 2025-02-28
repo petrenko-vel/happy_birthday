@@ -63,11 +63,6 @@ h1 {
     justify-content: space-between;
     align-items: center;
 }
-
-
-
-
-
 h2 {
     font-size: 37px;
     line-height: 100%;
@@ -82,9 +77,8 @@ h2 {
 .header__image {
     display: block;
     margin: 0 auto 0;
-  
-    width: 311px;
-    height: 330px;
+    width: 326px;
+    height: 351px;
 }
 .header__offer {
     margin-top: 40px;
