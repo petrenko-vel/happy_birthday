@@ -41,25 +41,6 @@ a {
     padding: 0 30px;
     
 }
-
-h1 {
-    font-size: 110px;
-    font-weight: 700;
-    color: #DF74AF;
-    line-height: 100%;
-}
-
-.btn {
-    padding: 22px;
-    background: #DF74AF;
-    color: #fff;
-    border-radius: 18px;
-    
-}
-.header {
-    /* display: flex;
-    padding: 60px 0; */
-}
 .container__header {
     display: flex;
     justify-content: space-between;
