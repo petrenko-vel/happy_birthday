@@ -1,11 +1,14 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-@font-face {
+/* @font-face {
     font-family: "Palatino linotype";
     src: local("Palatino linotype"), 
          url("/fonts/pala.woff") format("woff");
-  }
-
+  } */
+@font-face {
+	font-family: 'Palatino linotype'; 
+	src: url("/fonts/pala.woff"); 
+}
 
 
 /*.......ОБНУЛЕНИЕ.........*/
